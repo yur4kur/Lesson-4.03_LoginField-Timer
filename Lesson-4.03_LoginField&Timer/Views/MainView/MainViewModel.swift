@@ -14,11 +14,10 @@ final class MainViewModel: ObservableObject {
     
     // MARK: - Public properties
     
-    var timeCounter = TimeCounter(
+    @Published var timeCounter = TimeCounter(
         counter: 3,
         buttonTitle: Constants.startTitle
     )
-    let objectWillChange = ObjectWillChangePublisher()
 
     
     // MARK: - Public methods
@@ -34,7 +33,7 @@ final class MainViewModel: ObservableObject {
             )
         }
         
-        buttonDidTapped()
+        didTapButton()
     }
     
     
@@ -49,20 +48,16 @@ final class MainViewModel: ObservableObject {
             killTimer()
             timeCounter.buttonTitle = Constants.resetTitle
         }
-        
-        objectWillChange.send()
     }
     
     /// Changing button title
-    private func buttonDidTapped() {
+    private func didTapButton() {
         if timeCounter.buttonTitle == Constants.resetTitle {
             timeCounter.counter = 3
             timeCounter.buttonTitle = Constants.startTitle
         } else {
             timeCounter.buttonTitle = Constants.waitTitle
         }
-        
-        objectWillChange.send()
     }
     
     /// Removing timer from memory

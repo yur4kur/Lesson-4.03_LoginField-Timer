@@ -1,5 +1,5 @@
 //
-//  TimeCounterModel.swift
+//  TimeCounter.swift
 //  Lesson-4.03_LoginField&Timer
 //
 //  Created by Юрий Куринной on 26.11.2023.

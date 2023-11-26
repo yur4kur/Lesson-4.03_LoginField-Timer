@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  Lesson-4.03_LoginField&Timer
 //
 //  Created by Юрий Куринной on 26.11.2023.
@@ -21,6 +21,7 @@ struct MainView: View {
     var body: some View {
         VStack {
             MainTextView(text: "Greeting")
+            
             MainTextView(text: timer.timeCounter.counter.formatted())
             
             Spacer()

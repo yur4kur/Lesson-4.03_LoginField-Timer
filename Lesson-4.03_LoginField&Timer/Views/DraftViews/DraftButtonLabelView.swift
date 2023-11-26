@@ -1,5 +1,5 @@
 //
-//  LabelForButtonView.swift
+//  DraftButtonLabelView.swift
 //  Lesson-4.03_LoginField&Timer
 //
 //  Created by Юрий Куринной on 26.11.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// MARK: - LabelForButtonView
+// MARK: - DraftButtonLabelView
 
 struct DraftButtonLabelView: View {
     
