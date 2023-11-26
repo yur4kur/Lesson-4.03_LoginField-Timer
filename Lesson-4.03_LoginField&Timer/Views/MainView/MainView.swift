@@ -7,17 +7,39 @@
 
 import SwiftUI
 
+// MARK: - MainView
+
 struct MainView: View {
+    
+    // MARK: - Wrapped properties
+    
+    @StateObject private var timer = MainViewModel()
+    
+    
+    // MARK: - Body
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            MainTextView(text: "Greeting")
+            
+            MainTextView(text: timer.timeCounter.counter.formatted())
+            
+            Spacer()
+            
+            MainButtonView(timer: timer, 
+                           title: timer.timeCounter.buttonTitle,
+                           color: .red)
+            
+            Spacer()
+            
+            //MainButtonView(title: "Log out", color: .blue)
         }
         .padding()
     }
 }
+
+
+// MARK: - Preview
 
 #Preview {
     MainView()

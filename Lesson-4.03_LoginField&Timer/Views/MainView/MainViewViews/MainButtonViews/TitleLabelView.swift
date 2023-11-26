@@ -15,6 +15,7 @@ struct TitleLabelView: View {
     
     let title: String
     
+    
     // MARK: Body
     
     var body: some View {
@@ -24,6 +25,9 @@ struct TitleLabelView: View {
             .foregroundStyle(.white)
     }
 }
+
+
+// MARK: - Preview
 
 #Preview {
     TitleLabelView(title: "Start")
