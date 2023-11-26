@@ -1,5 +1,5 @@
 //
-//  ButtonLabelView.swift
+//  LabelForButtonView.swift
 //  Lesson-4.03_LoginField&Timer
 //
 //  Created by Юрий Куринной on 26.11.2023.
@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-// MARK: - TitleLabelView
+// MARK: - LabelForButtonView
 
-struct TitleLabelView: View {
+struct DraftButtonLabelView: View {
     
-    // MARK: Public properties
+    // MARK: - Public properties
     
     let title: String
     
     
-    // MARK: Body
+    // MARK: - Body
     
     var body: some View {
         Text(title)
@@ -29,6 +29,7 @@ struct TitleLabelView: View {
 
 // MARK: - Preview
 
+
 #Preview {
-    TitleLabelView(title: "Start")
+    DraftButtonLabelView(title: "Welcome")
 }

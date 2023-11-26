@@ -11,9 +11,9 @@ import SwiftUI
 
 struct MainTextView: View {
     
-    // MARK: - Wrapped properties
+    // MARK: - Public properties
     
-    var text: String
+    let text: String
     
     
     // MARK: - Body

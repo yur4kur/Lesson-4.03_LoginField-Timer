@@ -21,14 +21,11 @@ struct MainView: View {
     var body: some View {
         VStack {
             MainTextView(text: "Greeting")
-            
             MainTextView(text: timer.timeCounter.counter.formatted())
             
             Spacer()
             
-            MainButtonView(timer: timer, 
-                           title: timer.timeCounter.buttonTitle,
-                           color: .red)
+            MainButtonView(timer: timer)
             
             Spacer()
             

@@ -1,5 +1,5 @@
 //
-//  ButtonView.swift
+//  DraftButtonView.swift
 //  Lesson-4.03_LoginField&Timer
 //
 //  Created by Юрий Куринной on 26.11.2023.
@@ -7,26 +7,21 @@
 
 import SwiftUI
 
-// MARK: - Button View
+// MARK: - DraftButtonView
 
-struct MainButtonView: View {
-    
-    // MARK: - Wrapped properties
-    
-    @ObservedObject var timer: MainViewModel
-    
+struct DraftButtonView: View {
     
     // MARK: - Public properties
     
     let title: String
     let color: Color
-    
+    let action: () -> Void
     
     // MARK: - Body
     
     var body: some View {
-        Button(action: timer.startTimer) {
-            TitleLabelView(title: title)
+        Button(action: action) {
+            DraftButtonLabelView(title: title)
         }
         .frame(width: 200, height: 60)
         .background(color)
@@ -41,5 +36,5 @@ struct MainButtonView: View {
 // MARK: - Preview
 
 #Preview {
-    MainButtonView(timer: MainViewModel(), title: "Start", color: .red)
+    DraftButtonView(title: "Start", color: .red, action: {})
 }
