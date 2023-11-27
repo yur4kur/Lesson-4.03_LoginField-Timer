@@ -1,5 +1,5 @@
 //
-//  DraftButtonLabelView.swift
+//  DraftButtonTitleView.swift
 //  Lesson-4.03_LoginField&Timer
 //
 //  Created by Юрий Куринной on 26.11.2023.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-// MARK: - DraftButtonLabelView
+// MARK: - DraftButtonTitleView
 
-struct DraftButtonLabelView: View {
+struct DraftButtonTitleView: View {
     
     // MARK: - Public properties
     
@@ -31,5 +31,5 @@ struct DraftButtonLabelView: View {
 
 
 #Preview {
-    DraftButtonLabelView(title: "Welcome")
+    DraftButtonTitleView(title: "Welcome")
 }

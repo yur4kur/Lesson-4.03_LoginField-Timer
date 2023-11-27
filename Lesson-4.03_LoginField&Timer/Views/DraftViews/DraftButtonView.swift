@@ -21,7 +21,7 @@ struct DraftButtonView: View {
     
     var body: some View {
         Button(action: action) {
-            DraftButtonLabelView(title: title)
+            DraftButtonTitleView(title: title)
         }
         .frame(width: 200, height: 60)
         .background(color)
