@@ -26,11 +26,11 @@ struct MainView: View {
             
             Spacer()
             
-            MainButtonView(timer: timer)
+            StartButtonView(timer: timer)
             
             Spacer()
             
-            //MainButtonView(title: "Log out", color: .blue)
+            LogoutButtonView()
         }
         .padding()
     }

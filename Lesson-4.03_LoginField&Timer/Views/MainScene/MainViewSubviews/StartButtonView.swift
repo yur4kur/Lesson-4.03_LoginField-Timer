@@ -1,5 +1,5 @@
 //
-//  MainButtonView.swift
+//  StartButtonView.swift
 //  Lesson-4.03_LoginField&Timer
 //
 //  Created by Юрий Куринной on 26.11.2023.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-// MARK: - Button View
+// MARK: - StartButtonView View
 
-struct MainButtonView: View {
+struct StartButtonView: View {
     
     // MARK: - Wrapped properties
     
@@ -30,5 +30,5 @@ struct MainButtonView: View {
 // MARK: - Preview
 
 #Preview {
-    MainButtonView(timer: MainViewModel())
+    StartButtonView(timer: MainViewModel())
 }

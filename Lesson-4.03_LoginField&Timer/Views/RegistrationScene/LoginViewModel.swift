@@ -13,8 +13,11 @@ final class LoginViewModel: ObservableObject {
     
     // MARK: - Wrapped properties
     
-    @Published var userLogin = User(name: "", isRegistered: false)
-    @Published var userName = ""
+    @Published var userLogin = User(
+        name: Constants.emptyString,
+        isRegistered: false
+    )
+    @Published var userName = Constants.emptyString
     
     // MARK: - Public methods
     
@@ -23,5 +26,19 @@ final class LoginViewModel: ObservableObject {
             userLogin.name = userName
             userLogin.isRegistered.toggle()
         }
+    }
+    
+    func logout() {
+        userName = Constants.emptyString
+        userLogin.name = userName
+        userLogin.isRegistered.toggle()
+    }
+}
+
+// MARK: - Constants
+
+private extension LoginViewModel {
+    enum Constants {
+        static let emptyString = ""
     }
 }
