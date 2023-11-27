@@ -13,42 +13,17 @@ struct LoginView: View {
     
     // MARK:  - Wrapped properties
     
-    @State private var name = ""
-    @EnvironmentObject var userLogin: LoginViewModel
+    @EnvironmentObject var login: LoginViewModel
     
     
     // MARK: - Body
     
     var body: some View {
         VStack {
-            TextField(Constants.placeholderText, text: $name)
-                .multilineTextAlignment(.center)
-            Button(action: login) {
-                HStack {
-                    Image(systemName: Constants.buttonImage)
-                    Text(Constants.buttonText)
-                }
-            }
+            LoginTextFieldView(text: $login.userName)
+            
+            LoginButtonView(action: login.register)
         }
-    }
-    
-    // MARK: - Private methods
-    
-    private func login() {
-        if !name.isEmpty {
-            userLogin.user.name = name
-            userLogin.user.isRegistered.toggle()
-        }
-    }
-}
-
-// MARK: - Constants
-
-private extension LoginView {
-    enum Constants {
-        static let placeholderText = "Enter your name"
-        static let buttonImage = "checkmark.circle"
-        static let buttonText = "OK"
     }
 }
 

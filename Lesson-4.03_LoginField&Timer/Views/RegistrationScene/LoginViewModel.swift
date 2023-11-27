@@ -13,7 +13,15 @@ final class LoginViewModel: ObservableObject {
     
     // MARK: - Wrapped properties
     
-    @Published var user = User(name: "", isRegistered: false)
+    @Published var userLogin = User(name: "", isRegistered: false)
+    @Published var userName = ""
     
-    // TODO - Add methods
+    // MARK: - Public methods
+    
+    func register() {
+        if !userName.isEmpty {
+            userLogin.name = userName
+            userLogin.isRegistered.toggle()
+        }
+    }
 }
