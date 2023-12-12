@@ -5,7 +5,6 @@
 //  Created by Юрий Куринной on 27.11.2023.
 //
 
-import Foundation
 import SwiftUI
 
 // MARK: - LoginViewModel

@@ -1,5 +1,5 @@
 //
-//  MainViewModel.swift
+//  TimerViewModel.swift
 //  Lesson-4.03_LoginField&Timer
 //
 //  Created by Юрий Куринной on 26.11.2023.
@@ -8,9 +8,9 @@
 import Foundation
 import Combine
 
-// MARK: - MainView Model
+// MARK: - TimerViewModel
 
-final class MainViewModel: ObservableObject {
+final class TimerViewModel: ObservableObject {
     
     // MARK: - Public properties
     
@@ -69,7 +69,7 @@ final class MainViewModel: ObservableObject {
 
 // MARK: - Constants
 
-private extension MainViewModel {
+private extension TimerViewModel {
     enum Constants {
         static let startTitle = "Start"
         static let resetTitle = "Reset"

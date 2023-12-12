@@ -13,7 +13,7 @@ struct LogoutButtonView: View {
     
     // MARK: - Public properties
     
-    @EnvironmentObject var login: LoginViewModel
+    @EnvironmentObject var storageManager: StorageManager
     
     
     // MARK: - Body
@@ -22,7 +22,7 @@ struct LogoutButtonView: View {
         DraftButtonView(
             title: Constants.buttonTitle,
             color: .cyan,
-            action: login.logout
+            action: storageManager.logOut
         )
     }
 }

@@ -13,7 +13,7 @@ struct StartButtonView: View {
     
     // MARK: - Wrapped properties
     
-    @ObservedObject var timer: MainViewModel
+    @ObservedObject var timer: TimerViewModel
     
     
     // MARK: - Body
@@ -30,5 +30,5 @@ struct StartButtonView: View {
 // MARK: - Preview
 
 #Preview {
-    StartButtonView(timer: MainViewModel())
+    StartButtonView(timer: TimerViewModel())
 }

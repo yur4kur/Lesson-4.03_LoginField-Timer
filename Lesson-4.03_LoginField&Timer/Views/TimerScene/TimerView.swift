@@ -1,5 +1,5 @@
 //
-//  MainView.swift
+//  TimerView.swift
 //  Lesson-4.03_LoginField&Timer
 //
 //  Created by Юрий Куринной on 26.11.2023.
@@ -9,20 +9,20 @@ import SwiftUI
 
 // MARK: - MainView
 
-struct MainView: View {
+struct TimerView: View {
     
     // MARK: - Wrapped properties
     
-    @EnvironmentObject var login: LoginViewModel
+    @EnvironmentObject var storageManager: StorageManager
     
-    @StateObject private var timer = MainViewModel()
+    @StateObject private var timer = TimerViewModel()
     
     
     // MARK: - Body
     
     var body: some View {
         VStack {
-            MainTextView(text: "Greeting to \(login.userName)")
+            MainTextView(text: "Greeting to \(storageManager.name)")
             
             MainTextView(text: timer.timeCounter.counter.formatted())
             
@@ -42,5 +42,5 @@ struct MainView: View {
 // MARK: - Preview
 
 #Preview {
-    MainView()
+    TimerView()
 }

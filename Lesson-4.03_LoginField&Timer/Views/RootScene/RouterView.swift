@@ -13,15 +13,15 @@ struct RouterView: View {
     
     // MARK: - Wrapped properties
     
-    @StateObject private var login = LoginViewModel()
+    @StateObject private var login = RootViewModel()
     
-    
+    //
     // MARK: - Body
     
     var body: some View {
         Group {
-            if login.userLogin.isRegistered {
-                MainView()
+            if login.user.isRegistered {
+                TimerView()
             } else {
                 LoginView()
             }
