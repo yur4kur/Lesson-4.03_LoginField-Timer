@@ -13,6 +13,8 @@ struct MainView: View {
     
     // MARK: - Wrapped properties
     
+    @EnvironmentObject var login: LoginViewModel
+    
     @StateObject private var timer = MainViewModel()
     
     
@@ -20,7 +22,7 @@ struct MainView: View {
     
     var body: some View {
         VStack {
-            MainTextView(text: "Greeting")
+            MainTextView(text: "Greeting to \(login.userName)")
             
             MainTextView(text: timer.timeCounter.counter.formatted())
             

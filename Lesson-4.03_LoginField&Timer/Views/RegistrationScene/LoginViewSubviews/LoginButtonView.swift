@@ -14,6 +14,7 @@ struct LoginButtonView: View {
     // MARK: Public properties
     
     let action: () -> Void
+    let isValid: Bool
     
     
     // MARK: - Body
@@ -25,6 +26,7 @@ struct LoginButtonView: View {
                 Text(Constants.buttonText)
             }
         }
+        .disabled(!isValid)
     }
 }
 
@@ -40,5 +42,5 @@ private extension LoginButtonView {
 // MARK: - Preview
 
 #Preview {
-    LoginButtonView(action: {})
+    LoginButtonView(action: {}, isValid: true)
 }
