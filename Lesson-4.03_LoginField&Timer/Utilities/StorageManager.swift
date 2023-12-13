@@ -15,15 +15,16 @@ final class StorageManager: ObservableObject {
     let objectWillChange = PassthroughSubject<StorageManager, Never>()
     
     @AppStorage(Constants.nameKey) var name = Constants.emptyString
-    @AppStorage(Constants.isRegisteredKey) var isRegistered = false
+    @AppStorage(Constants.isRegisteredKey) private var isRegistered = false
     
     func logIn(userName: String) {
-        @AppStorage(Constants.nameKey) var name = userName
+        name = userName
         isRegistered.toggle()
         objectWillChange.send(self)
     }
     
     func logOut() {
+        name = Constants.emptyString
         isRegistered.toggle()
         objectWillChange.send(self)
     }
