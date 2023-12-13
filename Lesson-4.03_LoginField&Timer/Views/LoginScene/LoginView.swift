@@ -13,7 +13,7 @@ struct LoginView: View {
     
     // MARK:  - Wrapped properties
     
-    @EnvironmentObject var loginVM: LoginViewModel
+    @StateObject private var loginVM = LoginViewModel()
     
     
     // MARK: - Body

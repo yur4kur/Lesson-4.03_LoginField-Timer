@@ -20,7 +20,7 @@ struct RouterView: View {
     
     var body: some View {
         Group {
-            if login.user.isRegistered {
+            if login.isRegistered {
                 TimerView()
             } else {
                 LoginView()

@@ -11,8 +11,8 @@ import SwiftUI
 
 final class StorageManager: ObservableObject {
     
-    @AppStorage(Constants.nameKey) var name = Constants.emptyString
-    @AppStorage(Constants.isRegisteredKey) var isRegistered = false
+    @AppStorage(Constants.nameKey) private var name = Constants.emptyString
+    @AppStorage(Constants.isRegisteredKey) private var isRegistered = false
     
     func logIn(userName: String) {
         @AppStorage(Constants.nameKey) var name = userName
@@ -20,8 +20,6 @@ final class StorageManager: ObservableObject {
     }
     
     func logOut() {
-        //@AppStorage(Constants.nameKey) var name = Constants.emptyString
-        
         isRegistered.toggle()
     }
 }

@@ -24,14 +24,6 @@ struct LoginTextFieldView: View {
     }
 }
 
-// MARK: - Constants
-
-private extension LoginTextFieldView {
-    enum Constants {
-        static let placeholderText = "Type your name"
-    }
-}
-
 // MARK: - Preview
 
 #Preview {

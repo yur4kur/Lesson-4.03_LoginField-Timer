@@ -5,14 +5,17 @@
 //  Created by Юрий Куринной on 26.11.2023.
 //
 
-import Foundation
-import Combine
+import SwiftUI
+//import Combine
 
 // MARK: - TimerViewModel
 
 final class TimerViewModel: ObservableObject {
     
-    // MARK: - Public properties
+    // MARK: - Wrapped properties
+    
+    @AppStorage(Constants.nameKey) var name = Constants.emptyString
+    @AppStorage(Constants.isRegisteredKey) var isRegistered = false
     
     @Published var timeCounter = TimeCounter(
         counter: 3,
@@ -36,6 +39,11 @@ final class TimerViewModel: ObservableObject {
         didTapButton()
     }
     
+    func logout() {
+       // userName = Constants.emptyString
+        name = Constants.emptyString
+        isRegistered.toggle()
+    }
     
     // MARK: - Private methods
     
@@ -67,12 +75,4 @@ final class TimerViewModel: ObservableObject {
     }
 }
 
-// MARK: - Constants
 
-private extension TimerViewModel {
-    enum Constants {
-        static let startTitle = "Start"
-        static let resetTitle = "Reset"
-        static let waitTitle = "Wait..."
-    }
-}

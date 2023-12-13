@@ -13,10 +13,6 @@ final class RootViewModel: ObservableObject {
     
     // MARK: - Wrapped properties
     
-    @Published var user = User(
-        name: StorageManager().name,
-        isRegistered: StorageManager().isRegistered
-    )
+    @AppStorage(Constants.isRegisteredKey) var isRegistered = false
 }
-
 

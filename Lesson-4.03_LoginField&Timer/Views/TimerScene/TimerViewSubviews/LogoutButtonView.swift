@@ -13,7 +13,7 @@ struct LogoutButtonView: View {
     
     // MARK: - Public properties
     
-    @EnvironmentObject var storageManager: StorageManager
+    @ObservedObject var timerVM: TimerViewModel
     
     
     // MARK: - Body
@@ -22,21 +22,13 @@ struct LogoutButtonView: View {
         DraftButtonView(
             title: Constants.buttonTitle,
             color: .cyan,
-            action: storageManager.logOut
+            action: timerVM.logout
         )
-    }
-}
-
-// MARK: - Constants
-
-private extension LogoutButtonView {
-    enum Constants {
-        static let buttonTitle = "Logout"
     }
 }
 
 // MARK: - Preview
 
 #Preview {
-    LogoutButtonView()
+    LogoutButtonView(timerVM: TimerViewModel())
 }

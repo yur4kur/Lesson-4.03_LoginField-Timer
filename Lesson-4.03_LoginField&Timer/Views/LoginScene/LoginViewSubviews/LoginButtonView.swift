@@ -30,15 +30,6 @@ struct LoginButtonView: View {
     }
 }
 
-// MARK: - Constants
-
-private extension LoginButtonView {
-    enum Constants {
-        static let buttonImage = "checkmark.circle"
-        static let buttonText = "OK"
-    }
-}
-
 // MARK: - Preview
 
 #Preview {
