@@ -11,7 +11,7 @@ import SwiftUI
 struct Lesson_4_03_LoginField_TimerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RouterView()
         }
     }
 }
