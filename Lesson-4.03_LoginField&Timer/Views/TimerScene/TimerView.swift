@@ -13,26 +13,24 @@ struct TimerView: View {
     
     // MARK: - Wrapped properties
     
-    //@EnvironmentObject var storageManager: StorageManager
-    
-    @StateObject private var timer = TimerViewModel()
+    @StateObject private var timerVM = TimerViewModel()
     
     
     // MARK: - Body
     
     var body: some View {
         VStack {
-            MainTextView(text: Constants.greetingText + timer.name)
+            MainTextView(text: Constants.greetingText + timerVM.storageManager.name)
             
-            MainTextView(text: timer.timeCounter.counter.formatted())
-            
-            Spacer()
-            
-            StartButtonView(timer: timer)
+            MainTextView(text: timerVM.timeCounter.counter.formatted())
             
             Spacer()
             
-            LogoutButtonView(timerVM: timer)
+            StartButtonView(timer: timerVM)
+            
+            Spacer()
+            
+            LogoutButtonView(timerVM: timerVM)
         }
         .padding()
     }

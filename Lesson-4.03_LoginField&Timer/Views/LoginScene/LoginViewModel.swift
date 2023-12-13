@@ -13,9 +13,7 @@ final class LoginViewModel: ObservableObject {
     
     // MARK: - Wrapped properties
     
-    @AppStorage(Constants.nameKey) var name = Constants.emptyString
-    @AppStorage(Constants.isRegisteredKey) var isRegistered = false
-    
+    @Published var storageManager = StorageManager()
     @Published var userName = Constants.emptyString
     
     // MARK: - Public properties
@@ -32,8 +30,8 @@ final class LoginViewModel: ObservableObject {
     
     func register() {
         if !userName.isEmpty && isValid {
-            name = userName
-            isRegistered.toggle()
+            storageManager.logIn(userName: userName)
+            storageManager.objectWillChange.send(storageManager)
         }
     }
 }

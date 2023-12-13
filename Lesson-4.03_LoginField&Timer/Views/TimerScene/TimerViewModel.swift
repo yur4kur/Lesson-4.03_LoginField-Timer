@@ -14,9 +14,7 @@ final class TimerViewModel: ObservableObject {
     
     // MARK: - Wrapped properties
     
-    @AppStorage(Constants.nameKey) var name = Constants.emptyString
-    @AppStorage(Constants.isRegisteredKey) var isRegistered = false
-    
+    @Published var storageManager = StorageManager()
     @Published var timeCounter = TimeCounter(
         counter: 3,
         buttonTitle: Constants.startTitle
@@ -40,9 +38,7 @@ final class TimerViewModel: ObservableObject {
     }
     
     func logout() {
-       // userName = Constants.emptyString
-        name = Constants.emptyString
-        isRegistered.toggle()
+        storageManager.logOut()
     }
     
     // MARK: - Private methods
