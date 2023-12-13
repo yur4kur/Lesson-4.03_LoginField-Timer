@@ -20,7 +20,9 @@ struct TimerView: View {
     
     var body: some View {
         VStack {
-            MainTextView(text: Constants.greetingText + timerVM.storageManager.name)
+            MainTextView(
+                text: Constants.greetingText + timerVM.storageManager.name
+            )
             
             MainTextView(text: timerVM.timeCounter.counter.formatted())
             

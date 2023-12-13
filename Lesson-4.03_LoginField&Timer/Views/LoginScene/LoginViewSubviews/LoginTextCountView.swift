@@ -22,7 +22,6 @@ struct LoginTextCountView: View {
     var body: some View {
         Text("\(text.count)")
             .foregroundStyle(color)
-        
     }
 }
 

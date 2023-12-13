@@ -23,11 +23,17 @@ struct LoginView: View {
             HStack {
                 LoginTextFieldView(text: $loginVM.userName)
                 
-                LoginTextCountView(text: loginVM.userName, color: loginVM.color)
+                LoginTextCountView(
+                    text: loginVM.userName,
+                    color: loginVM.color
+                )
                     .padding(.trailing)
             }
             
-            LoginButtonView(action: loginVM.register, isValid: loginVM.isValid )
+            LoginButtonView(
+                action: loginVM.register,
+                isValid: loginVM.isValid
+            )
                 .padding(.trailing)
         }
     }

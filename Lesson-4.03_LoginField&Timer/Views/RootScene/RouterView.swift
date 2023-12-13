@@ -25,7 +25,7 @@ struct RouterView: View {
             } else {
                 LoginView()
             }
-        }.environmentObject(login)
+        }
     }
 }
 

@@ -12,30 +12,32 @@ import Combine
 
 final class StorageManager: ObservableObject {
     
+    // MARK: - Public properties
+    
     let objectWillChange = PassthroughSubject<StorageManager, Never>()
     
     @AppStorage(Constants.nameKey) var name = Constants.emptyString
+    
+    
+    // MARK: - Private properties
+    
     @AppStorage(Constants.isRegisteredKey) private var isRegistered = false
     
+    
+    // MARK: - Public methods
+    
+    
+    /// Add user name to defaults & change the flag to move to MainView
     func logIn(userName: String) {
         name = userName
         isRegistered.toggle()
         objectWillChange.send(self)
     }
     
+    /// Remove user name from defaults & change the flag to return to LoginView
     func logOut() {
         name = Constants.emptyString
         isRegistered.toggle()
         objectWillChange.send(self)
-    }
-}
-
-// MARK: - Constants
-
-private extension StorageManager {
-    enum Constants {
-        static let emptyString = ""
-        static let nameKey = "name"
-        static let isRegisteredKey = "isRegistered"
     }
 }
