@@ -13,6 +13,7 @@ struct RouterView: View {
     
     // MARK: - Wrapped properties
     
+    @EnvironmentObject private var storageManager: StorageManager
     @StateObject private var login = RootViewModel()
     
     
@@ -20,7 +21,7 @@ struct RouterView: View {
     
     var body: some View {
         Group {
-            if login.isRegistered {
+            if storageManager.isRegistered {
                 TimerView()
             } else {
                 LoginView()

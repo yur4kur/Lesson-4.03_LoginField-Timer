@@ -3,4 +3,325 @@
    uuid = "546CED49-1BF5-4737-9814-47FB5A81B613"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757"
+            shouldBeEnabled = "No"
+            nameForDebugger = "SomeMagic"
+            ignoreCount = "0"
+            continueAfterRunningActions = "Yes"
+            filePath = "Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "RootViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - 9b0b6ba9e3f3c67d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of Lesson_4_03_LoginField_Timer.RootViewModel.isRegistered : Swift.Bool"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - 9b5139ec0059ab6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.isRegistered.getter : Swift.Bool"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - fe2efb9ee74f529"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.isRegistered.setter : Swift.Bool"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - 40048d81a0b66f18"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.isRegistered.modify : Swift.Bool"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - 30068971dabdb46d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.isRegistered.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - b3ebf1c31250e7ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.$isRegistered.getter : Combine.Published&lt;Swift.Bool&gt;.Publisher"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - 733a390b2f738fbe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.$isRegistered.setter : Combine.Published&lt;Swift.Bool&gt;.Publisher"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - 14dfbff3e4038f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.$isRegistered.modify : Combine.Published&lt;Swift.Bool&gt;.Publisher"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - d812eee0693f2a3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.$isRegistered.modify : Combine.Published&lt;Swift.Bool&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - 9b0b6ba9e3f3c06d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of Lesson_4_03_LoginField_Timer.RootViewModel.isRegistered : Swift.Bool"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - 9b5139ec0059ab6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.isRegistered.getter : Swift.Bool"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - fe2efb9ee74f576"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.isRegistered.setter : Swift.Bool"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - 40048d81a0b66f47"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.isRegistered.modify : Swift.Bool"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - 5d827969649e1e3e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.$isRegistered.getter : SwiftUI.Binding&lt;Swift.Bool&gt;"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - fd8a7ad5347c7341"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of Lesson_4_03_LoginField_Timer.RootViewModel.isLoggedIn : Swift.Bool"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - c78763f05b4c6b53"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.isLoggedIn.getter : Swift.Bool"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - 1d71878b3a6b7d7f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.isLoggedIn.setter : Swift.Bool"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - 1acde60fbab0114c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.isLoggedIn.modify : Swift.Bool"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - 5e07bf27c89cb8e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.isLoggedIn.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "61D4E30F-414C-41B3-BD3F-9D71721C5757 - 2c70a7c4450e907"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lesson_4_03_LoginField_Timer.RootViewModel.$isLoggedIn.getter : SwiftUI.Binding&lt;Swift.Bool&gt;"
+                  moduleName = "Lesson-4.03_LoginField&amp;Timer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iosdev/Desktop/iOSDev/SwiftBook/Lesson-4.03_LoginField&amp;Timer/Lesson-4.03_LoginField&amp;Timer/Views/RootScene/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

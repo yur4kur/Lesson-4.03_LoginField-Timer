@@ -17,15 +17,10 @@ final class StorageManager: ObservableObject {
     let objectWillChange = PassthroughSubject<StorageManager, Never>()
     
     @AppStorage(Constants.nameKey) var name = Constants.emptyString
-    
-    
-    // MARK: - Private properties
-    
-    @AppStorage(Constants.isRegisteredKey) private var isRegistered = false
+    @AppStorage(Constants.isRegisteredKey) var isRegistered = false
     
     
     // MARK: - Public methods
-    
     
     /// Add user name to defaults & change the flag to move to MainView
     func logIn(userName: String) {

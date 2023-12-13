@@ -13,7 +13,7 @@ final class LoginViewModel: ObservableObject {
     
     // MARK: - Wrapped properties
     
-    @ObservedObject var storageManager = StorageManager()
+    @Published var storageManager = StorageManager()
     @Published var userName = Constants.emptyString
     
     // MARK: - Public properties
