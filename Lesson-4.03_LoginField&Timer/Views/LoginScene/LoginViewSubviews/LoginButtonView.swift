@@ -11,7 +11,7 @@ import SwiftUI
 
 struct LoginButtonView: View {
     
-    // MARK: Public properties
+    // MARK: - Public properties
     
     let action: () -> Void
     let isValid: Bool

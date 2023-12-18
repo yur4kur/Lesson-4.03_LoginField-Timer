@@ -10,11 +10,16 @@ import SwiftUI
 @main
 struct Lesson_4_03_LoginField_TimerApp: App {
     
+    // MARK: - Private  properties
+    
     private let user = StorageManager.shared.fetchUser()
+    
+    
+    // MARK: - Body
     
     var body: some Scene {
         WindowGroup {
-            RouterView()
+            RootView()
         }.environmentObject(UserManager(user: user))
     }
 }

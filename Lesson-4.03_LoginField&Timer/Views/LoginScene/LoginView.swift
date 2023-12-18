@@ -16,6 +16,7 @@ struct LoginView: View {
     @StateObject private var loginVM = LoginViewModel()
     @EnvironmentObject private var userManager: UserManager
     
+    
     // MARK: - Body
     
     var body: some View {
@@ -47,4 +48,5 @@ struct LoginView: View {
 
 #Preview {
     LoginView()
+        .environmentObject(UserManager())
 }

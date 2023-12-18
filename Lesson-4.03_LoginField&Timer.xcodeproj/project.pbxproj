@@ -20,14 +20,13 @@
 		6AD217762B135E3A00B23D39 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD217752B135E3A00B23D39 /* TimerViewModel.swift */; };
 		6AD217792B13AB2C00B23D39 /* DraftButtonTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD217782B13AB2C00B23D39 /* DraftButtonTitleView.swift */; };
 		6AD2177B2B13AB9900B23D39 /* DraftButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2177A2B13AB9900B23D39 /* DraftButtonView.swift */; };
-		6AD217802B14798300B23D39 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2177F2B14798300B23D39 /* RouterView.swift */; };
+		6AD217802B14798300B23D39 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2177F2B14798300B23D39 /* RootView.swift */; };
 		6AD217822B1479AB00B23D39 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD217812B1479AB00B23D39 /* LoginView.swift */; };
 		6AD217842B147B4B00B23D39 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD217832B147B4B00B23D39 /* LoginViewModel.swift */; };
 		6AD217872B14A4C800B23D39 /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD217862B14A4C800B23D39 /* LoginButtonView.swift */; };
 		6AD217892B14A6BC00B23D39 /* LoginTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD217882B14A6BC00B23D39 /* LoginTextFieldView.swift */; };
 		6AD217902B14AF6500B23D39 /* LogoutButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2178F2B14AF6500B23D39 /* LogoutButtonView.swift */; };
 		6AD2179B2B28A17700B23D39 /* LoginTextCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2179A2B28A17700B23D39 /* LoginTextCountView.swift */; };
-		6AD2179E2B28D3F000B23D39 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2179D2B28D3F000B23D39 /* RootViewModel.swift */; };
 		6AD217A12B28D43A00B23D39 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD217A02B28D43A00B23D39 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,14 +45,13 @@
 		6AD217752B135E3A00B23D39 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		6AD217782B13AB2C00B23D39 /* DraftButtonTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftButtonTitleView.swift; sourceTree = "<group>"; };
 		6AD2177A2B13AB9900B23D39 /* DraftButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftButtonView.swift; sourceTree = "<group>"; };
-		6AD2177F2B14798300B23D39 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		6AD2177F2B14798300B23D39 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		6AD217812B1479AB00B23D39 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6AD217832B147B4B00B23D39 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		6AD217862B14A4C800B23D39 /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
 		6AD217882B14A6BC00B23D39 /* LoginTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextFieldView.swift; sourceTree = "<group>"; };
 		6AD2178F2B14AF6500B23D39 /* LogoutButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButtonView.swift; sourceTree = "<group>"; };
 		6AD2179A2B28A17700B23D39 /* LoginTextCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextCountView.swift; sourceTree = "<group>"; };
-		6AD2179D2B28D3F000B23D39 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		6AD217A02B28D43A00B23D39 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,7 +123,7 @@
 		6AD217642B1335E400B23D39 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6AD2179C2B28D38800B23D39 /* RootScene */,
+				6AD2177F2B14798300B23D39 /* RootView.swift */,
 				6AD2177E2B14795200B23D39 /* LoginScene */,
 				6AD2176A2B13385E00B23D39 /* TimerScene */,
 			);
@@ -189,15 +187,6 @@
 				6AD217862B14A4C800B23D39 /* LoginButtonView.swift */,
 			);
 			path = LoginViewSubviews;
-			sourceTree = "<group>";
-		};
-		6AD2179C2B28D38800B23D39 /* RootScene */ = {
-			isa = PBXGroup;
-			children = (
-				6AD2179D2B28D3F000B23D39 /* RootViewModel.swift */,
-				6AD2177F2B14798300B23D39 /* RouterView.swift */,
-			);
-			path = RootScene;
 			sourceTree = "<group>";
 		};
 		6AD2179F2B28D41E00B23D39 /* Utilities */ = {
@@ -291,12 +280,11 @@
 				6AD217902B14AF6500B23D39 /* LogoutButtonView.swift in Sources */,
 				6AD217892B14A6BC00B23D39 /* LoginTextFieldView.swift in Sources */,
 				6AD217872B14A4C800B23D39 /* LoginButtonView.swift in Sources */,
-				6AD217802B14798300B23D39 /* RouterView.swift in Sources */,
+				6AD217802B14798300B23D39 /* RootView.swift in Sources */,
 				6AD2176C2B13389800B23D39 /* StartButtonView.swift in Sources */,
 				6AD217562B13353000B23D39 /* Lesson_4_03_LoginField_TimerApp.swift in Sources */,
 				6AD217742B135A1800B23D39 /* TimeCounter.swift in Sources */,
 				6AD217762B135E3A00B23D39 /* TimerViewModel.swift in Sources */,
-				6AD2179E2B28D3F000B23D39 /* RootViewModel.swift in Sources */,
 				6AB143D12B2EFE0D006DCCB3 /* UserManager.swift in Sources */,
 				6AB143CF2B2EFD99006DCCB3 /* User.swift in Sources */,
 			);

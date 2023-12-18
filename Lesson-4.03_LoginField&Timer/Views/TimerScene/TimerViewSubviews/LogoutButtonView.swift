@@ -29,6 +29,6 @@ struct LogoutButtonView: View {
 
 // MARK: - Preview
 
-//#Preview {
-//    LogoutButtonView(action: TimerViewModel())
-//}
+#Preview {
+    LogoutButtonView(action: {})
+}

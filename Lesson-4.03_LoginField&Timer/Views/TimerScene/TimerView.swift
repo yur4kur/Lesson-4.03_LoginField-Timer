@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// MARK: - MainView
+// MARK: - TimerView
 
 struct TimerView: View {
     
@@ -15,6 +15,7 @@ struct TimerView: View {
     
     @StateObject private var timerVM = TimerViewModel()
     @EnvironmentObject private var userManager: UserManager
+    
     
     // MARK: - Body
     
@@ -40,9 +41,9 @@ struct TimerView: View {
     }
 }
 
-
 // MARK: - Preview
 
 #Preview {
     TimerView()
+        .environmentObject(UserManager())
 }

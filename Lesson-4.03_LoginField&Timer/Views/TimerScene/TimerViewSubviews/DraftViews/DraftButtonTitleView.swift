@@ -26,9 +26,7 @@ struct DraftButtonTitleView: View {
     }
 }
 
-
 // MARK: - Preview
-
 
 #Preview {
     DraftButtonTitleView(title: "Welcome")

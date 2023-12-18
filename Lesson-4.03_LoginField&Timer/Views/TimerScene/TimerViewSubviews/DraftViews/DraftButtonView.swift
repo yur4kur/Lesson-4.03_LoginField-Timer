@@ -17,6 +17,7 @@ struct DraftButtonView: View {
     let color: Color
     let action: () -> Void
     
+    
     // MARK: - Body
     
     var body: some View {
@@ -32,6 +33,7 @@ struct DraftButtonView: View {
         )
     }
 }
+
 
 // MARK: - Preview
 

@@ -1,5 +1,5 @@
 //
-//  RouterView.swift
+//  RootView.swift
 //  Lesson-4.03_LoginField&Timer
 //
 //  Created by Юрий Куринной on 27.11.2023.
@@ -7,13 +7,14 @@
 
 import SwiftUI
 
-// MARK: - RouterView
+// MARK: - RootView
 
-struct RouterView: View {
+struct RootView: View {
     
     // MARK: - Wrapped properties
     
     @EnvironmentObject private var userManager: UserManager
+    
     
     // MARK: - Body
     
@@ -31,6 +32,6 @@ struct RouterView: View {
 // MARK: - Preview
 
 #Preview {
-    RouterView()
+    RootView()
         .environmentObject(UserManager())
 }

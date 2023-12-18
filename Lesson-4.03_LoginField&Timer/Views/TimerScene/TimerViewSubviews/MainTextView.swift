@@ -25,7 +25,6 @@ struct MainTextView: View {
     }
 }
 
-
 // MARK: - Preview
 
 #Preview {
