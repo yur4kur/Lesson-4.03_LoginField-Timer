@@ -11,6 +11,7 @@ enum Constants {
     static let emptyString = ""
     static let nameKey = "name"
     static let isRegisteredKey = "isRegistered"
+    static let userKey = "user"
     
     /// LoginTextField
     static let placeholderText = "Type your name"

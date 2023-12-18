@@ -14,25 +14,29 @@ struct LoginView: View {
     // MARK:  - Wrapped properties
     
     @StateObject private var loginVM = LoginViewModel()
-    
+    @EnvironmentObject private var userManager: UserManager
     
     // MARK: - Body
     
     var body: some View {
         VStack {
             HStack {
-                LoginTextFieldView(text: $loginVM.userName)
+                LoginTextFieldView(text: $userManager.user.name)
                 
                 LoginTextCountView(
-                    text: loginVM.userName,
-                    color: loginVM.color
+                    text: userManager.user.name,
+                    nameValid: userManager.nameValid
                 )
                     .padding(.trailing)
             }
             
             LoginButtonView(
-                action: loginVM.register,
-                isValid: loginVM.isValid
+                action: {
+                    loginVM.register(
+                        user: userManager.user,
+                        from: userManager)
+                },
+                isValid: userManager.nameValid
             )
                 .padding(.trailing)
         }

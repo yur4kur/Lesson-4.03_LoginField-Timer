@@ -14,12 +14,14 @@ final class TimerViewModel: ObservableObject {
     
     // MARK: - Wrapped properties
     
-    @Published var storageManager = StorageManager()
     @Published var timeCounter = TimeCounter(
         counter: 3,
         buttonTitle: Constants.startTitle
     )
 
+    // MARK: - Private properties
+    
+    private let storageManager = StorageManager.shared
     
     // MARK: - Public methods
     
@@ -37,8 +39,8 @@ final class TimerViewModel: ObservableObject {
         didTapButton()
     }
     
-    func logout() {
-        storageManager.logOut()
+    func logout(_ userManager: UserManager) {
+        storageManager.clear(userManager: userManager)
     }
     
     // MARK: - Private methods

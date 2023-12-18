@@ -14,19 +14,19 @@ struct LoginTextCountView: View {
     // MARK: - Wrapped properties
     
     let text: String
-    let color: Color
+    var nameValid: Bool
    
     
     // MARK: - Body
     
     var body: some View {
         Text("\(text.count)")
-            .foregroundStyle(color)
+            .foregroundStyle(nameValid ? Color.green : Color.red)
     }
 }
 
 // MARK: - Preview
 
 #Preview {
-    LoginTextCountView(text: "Hello", color: .red)
+    LoginTextCountView(text: "Hello", nameValid: true)
 }

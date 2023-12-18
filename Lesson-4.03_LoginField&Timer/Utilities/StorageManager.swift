@@ -6,33 +6,46 @@
 //
 
 import SwiftUI
-import Combine
 
 // MARK: - StorageManager
 
 final class StorageManager: ObservableObject {
     
-    // MARK: - Public properties
+    // MARK: Public properties
     
-    let objectWillChange = PassthroughSubject<StorageManager, Never>()
+    /// Singleton property
+    static let shared = StorageManager()
     
-    @AppStorage(Constants.nameKey) var name = Constants.emptyString
-    @AppStorage(Constants.isRegisteredKey) var isRegistered = false
+    @AppStorage(Constants.userKey) private var userData: Data?
     
+    // MARK: - Initializers
+    
+    /// Singleton initializer
+    private init() {}
     
     // MARK: - Public methods
     
-    /// Add user name to defaults & change the flag to move to MainView
-    func logIn(userName: String) {
-        name = userName
-        isRegistered.toggle()
-        objectWillChange.send(self)
+    /// CRUD methods
+    
+    // MARK: Save
+    func save(user: User) {
+        userData = try? JSONEncoder().encode(user)
+    }
+   
+    // MARK: Fetch
+    func fetchUser() -> User {
+        guard let data = userData else { return User() }
+        guard let user = try? JSONDecoder().decode(User.self, from: data) else {
+            return User()
+        }
+        
+        return user
     }
     
-    /// Remove user name from defaults & change the flag to return to LoginView
-    func logOut() {
-        name = Constants.emptyString
-        isRegistered.toggle()
-        objectWillChange.send(self)
+    // MARK: Delete
+    func clear(userManager: UserManager) {
+        userManager.user.name = ""
+        userManager.user.isRegistered = false
+        userData = nil
     }
 }

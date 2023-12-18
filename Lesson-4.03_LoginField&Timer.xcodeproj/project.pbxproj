@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6AB143CD2B2965B6006DCCB3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB143CC2B2965B6006DCCB3 /* Constants.swift */; };
+		6AB143CF2B2EFD99006DCCB3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB143CE2B2EFD99006DCCB3 /* User.swift */; };
+		6AB143D12B2EFE0D006DCCB3 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB143D02B2EFE0D006DCCB3 /* UserManager.swift */; };
 		6AD217562B13353000B23D39 /* Lesson_4_03_LoginField_TimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD217552B13353000B23D39 /* Lesson_4_03_LoginField_TimerApp.swift */; };
 		6AD217582B13353000B23D39 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD217572B13353000B23D39 /* TimerView.swift */; };
 		6AD2175A2B13353100B23D39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AD217592B13353100B23D39 /* Assets.xcassets */; };
@@ -31,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		6AB143CC2B2965B6006DCCB3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6AB143CE2B2EFD99006DCCB3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6AB143D02B2EFE0D006DCCB3 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		6AD217522B13353000B23D39 /* Lesson-4.03_LoginField&Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson-4.03_LoginField&Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD217552B13353000B23D39 /* Lesson_4_03_LoginField_TimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson_4_03_LoginField_TimerApp.swift; sourceTree = "<group>"; };
 		6AD217572B13353000B23D39 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				6AD217732B135A1800B23D39 /* TimeCounter.swift */,
+				6AB143CE2B2EFD99006DCCB3 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				6AD217A02B28D43A00B23D39 /* StorageManager.swift */,
+				6AB143D02B2EFE0D006DCCB3 /* UserManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -291,6 +297,8 @@
 				6AD217742B135A1800B23D39 /* TimeCounter.swift in Sources */,
 				6AD217762B135E3A00B23D39 /* TimerViewModel.swift in Sources */,
 				6AD2179E2B28D3F000B23D39 /* RootViewModel.swift in Sources */,
+				6AB143D12B2EFE0D006DCCB3 /* UserManager.swift in Sources */,
+				6AB143CF2B2EFD99006DCCB3 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

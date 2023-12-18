@@ -13,7 +13,7 @@ struct LogoutButtonView: View {
     
     // MARK: - Public properties
     
-    @ObservedObject var timerVM: TimerViewModel
+    let action: () -> Void
     
     
     // MARK: - Body
@@ -22,13 +22,13 @@ struct LogoutButtonView: View {
         DraftButtonView(
             title: Constants.buttonTitle,
             color: .cyan,
-            action: timerVM.logout
+            action: action
         )
     }
 }
 
 // MARK: - Preview
 
-#Preview {
-    LogoutButtonView(timerVM: TimerViewModel())
-}
+//#Preview {
+//    LogoutButtonView(action: TimerViewModel())
+//}

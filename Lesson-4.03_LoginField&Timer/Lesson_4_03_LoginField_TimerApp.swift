@@ -10,12 +10,11 @@ import SwiftUI
 @main
 struct Lesson_4_03_LoginField_TimerApp: App {
     
-    @StateObject private var storageManager = StorageManager()
+    private let user = StorageManager.shared.fetchUser()
     
     var body: some Scene {
         WindowGroup {
             RouterView()
-                .environmentObject(storageManager)
-        }
+        }.environmentObject(UserManager(user: user))
     }
 }

@@ -11,28 +11,16 @@ import SwiftUI
 
 final class LoginViewModel: ObservableObject {
     
-    // MARK: - Wrapped properties
+    // MARK: - Private properties
     
-    @Published var storageManager = StorageManager()
-    @Published var userName = Constants.emptyString
+    private let storageManager = StorageManager.shared
     
-    // MARK: - Public properties
-    
-    var isValid: Bool {
-        userName.count > 2 ? true : false
-    }
-    
-    var color: Color {
-        isValid ? Color.green : Color.red
-    }
     
     // MARK: - Public methods
     
-    func register() {
-        if !userName.isEmpty && isValid {
-            storageManager.logIn(userName: userName)
-            storageManager.objectWillChange.send(storageManager)
-        }
+    func register(user: User, from manager: UserManager) {
+        storageManager.save(user: user)
+        manager.user.isRegistered.toggle()
     }
 }
 
