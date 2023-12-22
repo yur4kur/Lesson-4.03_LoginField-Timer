@@ -10,6 +10,6 @@
 
 ### Stack of technologies include:
 - Patterns: MVVM, Singleton
-- Views: Text, TextField Button
+- Views: Text, TextField, Button
 - Data flow: EnvironmentObjec(App Environment)
 - Data storage: AppStorage
